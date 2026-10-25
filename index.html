@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bling Jeweler — Custom Chains, Pendants &amp; Grillz</title>
+<meta name="description" content="Bling Jeweler builds one-off custom pieces — Cuban chains, iced pendants, and molded grillz — from sketch to cast to hand-set stones. Commission slots open soon.">
+<link rel="canonical" href="https://blingjeweler.com/">
+<meta property="og:title" content="Bling Jeweler — custom chains, pendants & grillz">
+<meta property="og:description" content="One-off custom pieces from sketch to cast to hand-set stones. Commission slots open soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blingjeweler.com/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFE49A'/%3E%3Cstop offset='.55' stop-color='%23F2C14E'/%3E%3Cstop offset='1' stop-color='%23A37B1E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='5' fill='%230C0D10'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Arial,sans-serif' font-weight='bold' font-size='12' fill='url(%23g)'%3EBJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"JewelryStore","name":"Bling Jeweler","url":"https://blingjeweler.com/","description":"Custom jewelry commissions: Cuban chains, iced pendants, and molded grillz built from sketch to cast to hand-set stones.","image":"https://blingjeweler.com/","priceRange":"$$$"}
+</script>
+<style>
+:root{
+  --night:#0C0D10; --panel:#15171D; --edge:#262A33;
+  --ice:#A8E6FF; --gold:#F2C14E; --text:#E9ECF2; --dim:#9AA1AD;
+  --disp:"Space Grotesk",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--night);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65}
+a{color:var(--ice)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--edge)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand b{font-family:var(--disp);font-weight:700;font-size:1.08rem;letter-spacing:.1em}
+.brand b span{color:var(--gold)}
+nav.main a{color:var(--text);text-decoration:none;margin-left:22px;font-size:.93rem}
+nav.main a:hover{color:var(--gold)}
+/* hero with chain */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--edge)}
+.hero .wrap{padding:84px 20px 70px;position:relative}
+.hero h1{font-family:var(--disp);font-weight:700;font-size:clamp(1.8rem,4.8vw,3.3rem);line-height:1.16;letter-spacing:.01em;max-width:22ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lede{margin-top:22px;max-width:56ch;font-size:1.08rem;color:var(--dim)}
+.hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;text-decoration:none;font-weight:700;font-size:.95rem;border-radius:2px}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{background:#ffd978}
+.btn-line{border:1.5px solid var(--ice);color:var(--ice)}
+.btn-line:hover{background:rgba(168,230,255,.1)}
+.chain{display:block;width:100%;height:auto;margin-top:54px}
+section{padding:64px 0;border-bottom:1px solid var(--edge)}
+h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.15rem,2.6vw,1.7rem);letter-spacing:.08em;margin-bottom:12px}
+.sub{color:var(--dim);max-width:62ch}
+/* work */
+.pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:34px}
+.piece{background:var(--panel);padding:30px 24px}
+.piece svg{display:block;margin:0 auto 20px}
+.piece h3{font-family:var(--disp);font-weight:400;font-size:.95rem;letter-spacing:.1em;text-align:center}
+.piece p{font-size:.92rem;color:var(--dim);margin-top:10px;text-align:center}
+/* commission timeline */
+.steps{list-style:none;margin-top:36px;border-left:2px solid var(--gold);padding-left:0}
+.steps li{position:relative;padding:0 0 34px 42px}
+.steps li:last-child{padding-bottom:0}
+.steps .num{position:absolute;left:-19px;top:0;width:36px;height:36px;border-radius:50%;background:var(--night);border:2px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-family:var(--disp);font-size:.85rem;font-weight:700}
+.steps b{display:block;font-size:1.05rem;margin-bottom:5px;letter-spacing:.02em}
+.steps p{color:var(--dim);max-width:60ch;font-size:.97rem}
+.steps .eta{color:var(--ice);font-size:.85rem;font-weight:500}
+/* materials table */
+table{width:100%;border-collapse:collapse;margin-top:30px;font-size:.95rem}
+caption{text-align:left;color:var(--dim);font-size:.9rem;margin-bottom:12px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--edge)}
+th{color:var(--gold);font-weight:600;font-size:.85rem;border-bottom:2px solid var(--gold)}
+td:first-child{color:var(--text);font-weight:500}
+td{color:var(--dim)}
+/* commission form */
+.commission .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.9rem;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--edge);border-radius:2px;background:var(--panel);color:var(--text);font:inherit;font-size:.95rem}
+input::placeholder,textarea::placeholder{color:#6b727e}
+button.btn{border:0;cursor:pointer;font:inherit;font-weight:700}
+.form-note{font-size:.87rem;color:var(--dim)}
+footer{padding:42px 0 30px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h3{font-family:var(--disp);font-weight:700;font-size:.9rem;letter-spacing:.12em;margin-bottom:12px}
+footer a{color:var(--dim);text-decoration:none;display:block;padding:3px 0;font-size:.92rem}
+footer a:hover{color:var(--ice)}
+.fineprint{grid-column:1/-1;border-top:1px solid var(--edge);margin-top:26px;padding-top:16px;font-size:.84rem;color:#6b727e;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:880px){
+  .pieces{grid-template-columns:1fr}
+  .commission .wrap{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  nav.main a{margin-left:0;margin-right:18px}
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Bling Jeweler home">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="bjG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE49A"/><stop offset=".55" stop-color="#F2C14E"/><stop offset="1" stop-color="#A37B1E"/></linearGradient></defs>
+        <rect width="32" height="32" rx="5" fill="#15171D" stroke="#262A33"/>
+        <circle cx="16" cy="16" r="10.5" fill="none" stroke="url(#bjG)" stroke-width="2.4"/>
+        <text x="16" y="20.8" text-anchor="middle" font-family="Space Grotesk,Arial,sans-serif" font-weight="700" font-size="12" fill="url(#bjG)">BJ</text>
+      </svg>
+      <b>BLING<span>JEWELER</span></b>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#work">What we build</a>
+      <a href="#process">Process</a>
+      <a href="#materials">Materials</a>
+      <a href="#commission">Commission</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <h1>If you can sketch it on a napkin, <em>we can cast it in gold.</em></h1>
+    <p class="lede">Bling Jeweler is a custom bench, not a catalog. Cuban chains built link by link, pendants carved from your artwork, grillz molded to your actual teeth. One piece at a time, no two alike.</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="#commission">Start a commission</a>
+      <a class="btn btn-line" href="#process">See the process</a>
+    </div>
+    <svg class="chain" viewBox="0 0 1040 150" role="img" aria-label="A heavy Cuban link chain with an iced pendant" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="lkG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFE9A8"/><stop offset=".4" stop-color="#F2C14E"/><stop offset=".78" stop-color="#B08426"/><stop offset="1" stop-color="#7A5A14"/>
+        </linearGradient>
+        <linearGradient id="lkIn" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#FFE9A8"/><stop offset=".6" stop-color="#C79B34"/><stop offset="1" stop-color="#8C691A"/>
+        </linearGradient>
+        <linearGradient id="lkBk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8C691A"/><stop offset="1" stop-color="#4f3c0e"/>
+        </linearGradient>
+        <linearGradient id="iceT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0FAFF"/><stop offset=".6" stop-color="#A8E6FF"/><stop offset="1" stop-color="#6FB9DB"/></linearGradient>
+        <linearGradient id="iceL" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#C9EFFF"/><stop offset="1" stop-color="#5D9FC2"/></linearGradient>
+        <linearGradient id="iceR" x1="1" y1="0" x2=".2" y2="1"><stop offset="0" stop-color="#E4F6FF"/><stop offset="1" stop-color="#4C8BAD"/></linearGradient>
+        <linearGradient id="iceC" x1=".5" y1="0" x2=".5" y2="1"><stop offset="0" stop-color="#F4FBFF"/><stop offset="1" stop-color="#78B6D6"/></linearGradient>
+        <filter id="chSh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity=".5"/></filter>
+      </defs>
+      <!-- back links (passing behind) -->
+      <g fill="none" stroke="url(#lkBk)" stroke-width="12" stroke-linecap="round">
+        <path d="M100 64 q18 14 36 2" /><path d="M300 74 q18 12 36 1"/><path d="M710 75 q18 12 36 -1"/><path d="M910 66 q18 10 36 -4"/>
+      </g>
+      <!-- front cuban links: rendered as gold tori -->
+      <g filter="url(#chSh)">
+        <g fill="none">
+          <ellipse cx="65" cy="60" rx="38" ry="22" transform="rotate(-8 65 60)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="65" cy="60" rx="38" ry="22" transform="rotate(-8 65 60)" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="165" cy="68" rx="38" ry="22" transform="rotate(-4 165 68)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="165" cy="68" rx="38" ry="22" transform="rotate(-4 165 68)" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="265" cy="73" rx="38" ry="22" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="265" cy="73" rx="38" ry="22" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="365" cy="76" rx="38" ry="22" transform="rotate(2 365 76)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="365" cy="76" rx="38" ry="22" transform="rotate(2 365 76)" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="675" cy="76" rx="38" ry="22" transform="rotate(-2 675 76)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="675" cy="76" rx="38" ry="22" transform="rotate(-2 675 76)" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="775" cy="73" rx="38" ry="22" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="775" cy="73" rx="38" ry="22" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="875" cy="68" rx="38" ry="22" transform="rotate(4 875 68)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="875" cy="68" rx="38" ry="22" transform="rotate(4 875 68)" stroke="url(#lkIn)" stroke-width="4.5"/>
+          <ellipse cx="975" cy="60" rx="38" ry="22" transform="rotate(8 975 60)" stroke="url(#lkG)" stroke-width="13"/>
+          <ellipse cx="975" cy="60" rx="38" ry="22" transform="rotate(8 975 60)" stroke="url(#lkIn)" stroke-width="4.5"/>
+        </g>
+        <!-- glints -->
+        <g stroke="#FFF7DC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".9">
+          <path d="M40 46 q22 -12 46 -6"/><path d="M142 54 q22 -12 46 -6"/><path d="M242 59 q22 -12 46 -6"/><path d="M342 62 q22 -12 46 -6"/>
+          <path d="M652 62 q22 -12 46 -6"/><path d="M752 59 q22 -12 46 -6"/><path d="M852 54 q22 -12 46 -6"/><path d="M952 46 q22 -12 46 -6"/>
+        </g>
+      </g>
+      <!-- bail links to pendant -->
+      <g fill="none" filter="url(#chSh)">
+        <ellipse cx="462" cy="78" rx="30" ry="18" transform="rotate(6 462 78)" stroke="url(#lkG)" stroke-width="10"/>
+        <ellipse cx="578" cy="78" rx="30" ry="18" transform="rotate(-6 578 78)" stroke="url(#lkG)" stroke-width="10"/>
+      </g>
+      <!-- iced pendant: faceted stone -->
+      <g filter="url(#chSh)">
+        <path d="M488 96 L504 83 L520 96 Z" fill="url(#iceL)"/>
+        <path d="M504 83 L520 70 L536 83 L520 96 Z" fill="url(#iceT)"/>
+        <path d="M536 83 L552 96 L520 96 Z" fill="url(#iceR)"/>
+        <path d="M488 96 L504 96 L520 142 Z" fill="url(#iceL)"/>
+        <path d="M504 96 L536 96 L520 142 Z" fill="url(#iceC)"/>
+        <path d="M536 96 L552 96 L520 142 Z" fill="url(#iceR)"/>
+        <g fill="none" stroke="#F4FBFF" stroke-width="1" opacity=".6">
+          <path d="M488 96 H552 M504 83 L520 96 L536 83 M504 83 V96 M536 83 V96 M504 96 L520 142 M536 96 L520 142 M520 70 L504 83 M520 70 L536 83"/>
+        </g>
+        <path d="M508 100 L520 134 L514 101 Z" fill="#ffffff" opacity=".55"/>
+        <ellipse cx="516" cy="80" rx="8" ry="3.5" fill="#ffffff" opacity=".75"/>
+        <path d="M546 64 l1.8 5.4 5.4 1.8 -5.4 1.8 -1.8 5.4 -1.8 -5.4 -5.4 -1.8 5.4 -1.8 Z" fill="#DFF4FF"/>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>WHAT WE BUILD</h2>
+    <p class="sub">Three disciplines, one bench. Everything is drawn, 3D-modeled, cast, and finished in-house — you approve the render before any metal is poured.</p>
+    <div class="pieces">
+      <div class="piece">
+        <svg width="120" height="90" viewBox="0 0 120 90" aria-hidden="true">
+          <defs><linearGradient id="pcG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset=".45" stop-color="#F2C14E"/><stop offset="1" stop-color="#7A5A14"/></linearGradient>
+          <linearGradient id="pcI" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#8C691A"/></linearGradient></defs>
+          <g fill="none">
+            <ellipse cx="28" cy="40" rx="20" ry="12" transform="rotate(-6 28 40)" stroke="url(#pcG)" stroke-width="7"/>
+            <ellipse cx="28" cy="40" rx="20" ry="12" transform="rotate(-6 28 40)" stroke="url(#pcI)" stroke-width="2.4"/>
+            <ellipse cx="60" cy="48" rx="20" ry="12" stroke="url(#pcG)" stroke-width="7"/>
+            <ellipse cx="60" cy="48" rx="20" ry="12" stroke="url(#pcI)" stroke-width="2.4"/>
+            <ellipse cx="92" cy="40" rx="20" ry="12" transform="rotate(6 92 40)" stroke="url(#pcG)" stroke-width="7"/>
+            <ellipse cx="92" cy="40" rx="20" ry="12" transform="rotate(6 92 40)" stroke="url(#pcI)" stroke-width="2.4"/>
+          </g>
+          <g stroke="#FFF7DC" stroke-width="1.8" stroke-linecap="round" fill="none" opacity=".9">
+            <path d="M14 32 q12 -7 26 -4"/><path d="M46 40 q12 -7 26 -4"/><path d="M78 32 q12 -7 26 -4"/>
+          </g>
+        </svg>
+        <h3>CHAINS</h3>
+        <p>Cuban, Miami, rope, and Franco in 10k–18k gold. Each link soldered and filed by hand; clasps rated to the chain's true weight.</p>
+      </div>
+      <div class="piece">
+        <svg width="120" height="90" viewBox="0 0 120 90" aria-hidden="true">
+          <defs>
+            <linearGradient id="pdT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0FAFF"/><stop offset="1" stop-color="#6FB9DB"/></linearGradient>
+            <linearGradient id="pdL" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#C9EFFF"/><stop offset="1" stop-color="#4C8BAD"/></linearGradient>
+            <linearGradient id="pdR" x1="1" y1="0" x2=".2" y2="1"><stop offset="0" stop-color="#E4F6FF"/><stop offset="1" stop-color="#3E7A99"/></linearGradient>
+            <linearGradient id="pdC" x1=".5" y1="0" x2=".5" y2="1"><stop offset="0" stop-color="#F4FBFF"/><stop offset="1" stop-color="#5D9FC2"/></linearGradient>
+          </defs>
+          <path d="M28 34 L44 20 L60 34 Z" fill="url(#pdL)"/>
+          <path d="M44 20 L60 8 L76 20 L60 34 Z" fill="url(#pdT)"/>
+          <path d="M76 20 L92 34 L60 34 Z" fill="url(#pdR)"/>
+          <path d="M28 34 L44 34 L60 84 Z" fill="url(#pdL)"/>
+          <path d="M44 34 L76 34 L60 84 Z" fill="url(#pdC)"/>
+          <path d="M76 34 L92 34 L60 84 Z" fill="url(#pdR)"/>
+          <g fill="none" stroke="#F4FBFF" stroke-width=".9" opacity=".6"><path d="M28 34 H92 M44 20 L60 34 L76 20 M44 20 V34 M76 20 V34 M44 34 L60 84 M76 34 L60 84 M60 8 L44 20 M60 8 L76 20"/></g>
+          <path d="M50 38 L60 76 L55 39 Z" fill="#ffffff" opacity=".5"/>
+          <ellipse cx="56" cy="17" rx="7" ry="3" fill="#ffffff" opacity=".75"/>
+        </svg>
+        <h3>PENDANTS</h3>
+        <p>Your logo, portrait, or idea carved into a one-off piece. Pavé, prong, or channel-set stones — layout plotted stone by stone.</p>
+      </div>
+      <div class="piece">
+        <svg width="120" height="90" viewBox="0 0 120 90" aria-hidden="true">
+          <defs>
+            <linearGradient id="grG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset=".45" stop-color="#F2C14E"/><stop offset="1" stop-color="#8C691A"/></linearGradient>
+            <linearGradient id="grD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B08426"/><stop offset="1" stop-color="#6b4f10"/></linearGradient>
+          </defs>
+          <!-- gold grill bar: six cast caps with sheen -->
+          <g>
+            <path d="M18 40 q8 -16 16 -2 l0 24 q-8 10 -16 2 Z" fill="url(#grG)" stroke="url(#grD)" stroke-width="1.4"/>
+            <path d="M36 36 q8 -14 15 -2 l0 30 q-7 9 -15 2 Z" fill="url(#grG)" stroke="url(#grD)" stroke-width="1.4"/>
+            <path d="M53 34 q7 -12 14 0 l0 32 q-7 8 -14 1 Z" fill="url(#grG)" stroke="url(#grD)" stroke-width="1.4"/>
+            <path d="M69 34 q7 -12 14 0 l0 33 q-7 7 -14 -1 Z" fill="url(#grG)" stroke="url(#grD)" stroke-width="1.4"/>
+            <path d="M85 36 q8 -14 15 2 l0 28 q-8 7 -15 -2 Z" fill="url(#grG)" stroke="url(#grD)" stroke-width="1.4"/>
+          </g>
+          <!-- specular sheen band across the caps -->
+          <path d="M18 42 q42 -16 82 0 l0 5 q-40 -15 -82 0 Z" fill="#FFF7DC" opacity=".55"/>
+          <g stroke="#FFF7DC" stroke-width="1.4" stroke-linecap="round" opacity=".8" fill="none">
+            <path d="M24 32 q5 -5 9 -3"/><path d="M58 28 q5 -4 8 -2"/><path d="M90 31 q5 -4 8 -1"/>
+          </g>
+        </svg>
+        <h3>GRILLZ</h3>
+        <p>Molded from a dental impression we send to your door. Solid gold, open-face, or iced — polished so they sit flush and come off clean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>THE COMMISSION, STEP BY STEP</h2>
+    <p class="sub">A real custom piece takes weeks, not days. Here's the honest timeline we run every build on.</p>
+    <ol class="steps">
+      <li><span class="num" aria-hidden="true">1</span><b>Consult &amp; sketch</b><p>You bring the idea — a drawing, a photo, a logo file. We talk size, metal, stones, and budget, then draw it up.</p><span class="eta">Week 1</span></li>
+      <li><span class="num" aria-hidden="true">2</span><b>3D render approval</b><p>You see the exact piece in a CAD render, down to stone counts and clasp. Nothing is cast until you sign off.</p><span class="eta">Week 2</span></li>
+      <li><span class="num" aria-hidden="true">3</span><b>Cast &amp; build</b><p>Lost-wax casting in your chosen karat, then assembly, soldering, and filing at the bench.</p><span class="eta">Weeks 3–5</span></li>
+      <li><span class="num" aria-hidden="true">4</span><b>Setting &amp; finish</b><p>Stones set by hand under a scope, then polish or ice-finish. Grillz get a final fit check against your mold.</p><span class="eta">Week 6</span></li>
+      <li><span class="num" aria-hidden="true">5</span><b>Weigh-in &amp; handoff</b><p>Your piece is weighed in front of you and delivered with its metal and stone documentation.</p><span class="eta">Week 7</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="materials">
+  <div class="wrap">
+    <h2>MATERIALS, STRAIGHT UP</h2>
+    <table>
+      <caption>Every quote names the karat, the finish, and what the stones actually are. This is the language we use.</caption>
+      <thead><tr><th scope="col">Metal / stone</th><th scope="col">What it means on your piece</th><th scope="col">Good to know</th></tr></thead>
+      <tbody>
+        <tr><td>10k gold</td><td>41.7% gold — the workhorse for heavy chains</td><td>Hardest wearing, lightest on the budget</td></tr>
+        <tr><td>14k gold</td><td>58.3% gold — the standard for pendants and grillz</td><td>Best balance of color and durability</td></tr>
+        <tr><td>18k gold</td><td>75% gold — deep color for showcase pieces</td><td>Softer; we thicken structural parts to compensate</td></tr>
+        <tr><td>Natural diamonds</td><td>Mined stones, graded before setting</td><td>Grading paperwork included with the piece</td></tr>
+        <tr><td>Lab diamonds</td><td>Same crystal, grown not mined</td><td>Bigger ice for the same budget — always disclosed</td></tr>
+        <tr><td>Moissanite</td><td>A different stone, not a diamond</td><td>We'll build with it if you ask; we'll never pass it off</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="commission" class="commission">
+  <div class="wrap">
+    <div>
+      <h2>START A COMMISSION</h2>
+      <p class="sub" style="margin-top:10px">The bench takes a limited number of builds at a time so every piece gets real hours. Commission slots open soon — describe your piece and you'll be first in line for a consult when they do.</p>
+      <p style="margin-top:18px;color:var(--dim);font-size:.95rem;max-width:52ch">Consultations will be by appointment only. Booking details are published here the day the bench opens.</p>
+    </div>
+    <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='Got it — consults are booked when commission slots open. Nothing you typed left your browser.';">
+      <div>
+        <label for="ptype">Piece</label>
+        <select id="ptype" name="ptype"><option>Chain</option><option>Pendant</option><option>Grillz</option><option>Something else</option></select>
+      </div>
+      <div>
+        <label for="metal">Metal</label>
+        <select id="metal" name="metal"><option>10k gold</option><option>14k gold</option><option>18k gold</option><option>Not sure yet</option></select>
+      </div>
+      <div>
+        <label for="idea">Describe the piece</label>
+        <textarea id="idea" name="idea" rows="5" placeholder="e.g., 14k Cuban, 8mm, iced clasp — or a pendant of my label's logo, about 2 inches…"></textarea>
+      </div>
+      <div>
+        <label for="budget">Rough budget</label>
+        <select id="budget" name="budget"><option>Under $2,000</option><option>$2,000–$5,000</option><option>$5,000–$15,000</option><option>$15,000+</option></select>
+      </div>
+      <button class="btn btn-gold" type="submit">Request a consult</button>
+      <p class="form-note">Submissions open at launch — nothing you type here leaves your browser yet.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>BLING JEWELER</h3>
+      <p style="max-width:40ch;font-size:.93rem;color:var(--dim)">A custom jewelry bench for chains, pendants, and grillz — sketch to cast to hand-set stones. By appointment, opening soon.</p>
+    </div>
+    <div>
+      <h3>BENCH</h3>
+      <a href="#work">What we build</a>
+      <a href="#process">Process</a>
+      <a href="#materials">Materials</a>
+    </div>
+    <div>
+      <h3>SITE</h3>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+    <div class="fineprint">
+      <span>© 2026 Bling Jeweler. All rights reserved.</span>
+      <span>The bench is pre-launch; commission slots and booking open soon.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
